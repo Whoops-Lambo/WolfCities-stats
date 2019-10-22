@@ -13,6 +13,8 @@ var url = 'http://mcapi.us/server/status?ip=' + mcIP + '&port=' + mcPort;
 
 $ git push heroku master
 
+$ mvn -B -DskipTests clean dependency:list install
+
 function update() {
   /*seconds = seconds + 1;
   secondsString = seconds.toString();
